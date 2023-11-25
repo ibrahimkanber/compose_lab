@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.compose_lab.components.ScaffoldComponent
+import com.example.compose_lab.essentials.Provider
 import com.example.compose_lab.essentials.StateLab
 import com.example.compose_lab.ui.theme.Compose_labTheme
 
