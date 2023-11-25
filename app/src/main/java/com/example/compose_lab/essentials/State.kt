@@ -20,6 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.key
+import com.example.compose_lab.components.Container
 import kotlin.random.Random
 
 data class UserState(
@@ -121,21 +122,6 @@ fun CustomDivider() {
         color = androidx.compose.ui.graphics.Color.DarkGray,
         modifier = Modifier.padding(20.dp)
     )
-}
-
-@Composable
-fun Container(content: @Composable () -> Unit) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(color = Color(0xFFF5CCA0))
-            .padding(vertical = 20.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-
-        content()
-    }
 }
 
 
