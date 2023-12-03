@@ -31,13 +31,15 @@ data class UserState(
 
 @Composable
 fun StateLab() {
-    Container {
-        StateLabPrimitive()
-        CustomDivider()
-        StateLabObject()
-        CustomDivider()
-        StateLabList()
-    }
+    Container(
+        content = {
+            StateLabPrimitive()
+            CustomDivider()
+            StateLabObject()
+            CustomDivider()
+            StateLabList()
+        }
+    )
 }
 
 @Composable

@@ -12,11 +12,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Container(content: @Composable () -> Unit) {
+fun Container(content: @Composable () -> Unit,color:Color=Color(0xFFF5CCA0)) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color(0xFFF5CCA0))
+            .background(color)
             .padding(vertical = 20.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally

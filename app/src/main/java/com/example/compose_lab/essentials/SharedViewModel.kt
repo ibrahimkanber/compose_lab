@@ -30,10 +30,12 @@ class SharedViewModel : ViewModel() {
 @Composable
 fun SharedViewModelComponent(){
     val viewModel: SharedViewModel = viewModel()
-    Container {
-        FirstComposable(viewModel = viewModel)
-        SecondComposable(viewModel = viewModel)
-    }
+    Container(
+        content = {
+            FirstComposable(viewModel = viewModel)
+            SecondComposable(viewModel = viewModel)
+        }
+    )
 }
 
 @Composable
