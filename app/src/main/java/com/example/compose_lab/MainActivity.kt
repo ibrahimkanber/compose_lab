@@ -15,6 +15,7 @@ import com.example.compose_lab.essentials.PhilipHomeFeed
 import com.example.compose_lab.essentials.PhilipHomeFeed2
 import com.example.compose_lab.essentials.Provider
 import com.example.compose_lab.essentials.SavedStateLesson
+import com.example.compose_lab.essentials.SelfStudy1
 import com.example.compose_lab.essentials.SharedViewModelComponent
 import com.example.compose_lab.essentials.StateLab
 import com.example.compose_lab.essentials.StateLessonTwo
@@ -30,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    SavedStateLesson()
+                    SelfStudy1()
                 }
             }
         }

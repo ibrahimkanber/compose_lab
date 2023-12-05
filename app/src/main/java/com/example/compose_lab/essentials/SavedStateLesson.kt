@@ -9,6 +9,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
+
 import com.example.compose_lab.components.Container
 
 
@@ -21,7 +22,6 @@ class ForSavedStateLessonViewModel(
 
     fun increase(){
         counter++
-
         savedStateHandle["counter"] = counter
         val last=savedStateHandle.get<Int>("counter")
         println("saved $last")
@@ -31,7 +31,6 @@ class ForSavedStateLessonViewModel(
 
 @Composable
 fun SavedStateLesson(
-
 ){
    val vm:ForSavedStateLessonViewModel= viewModel()
     Container(content = {
